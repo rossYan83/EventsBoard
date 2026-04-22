@@ -73,13 +73,14 @@ Error generating stack: `+e.message+`
     color: #1a3a6a;
   }
 `,wr=o((e=>{var t=Symbol.for(`react.transitional.element`),n=Symbol.for(`react.fragment`);function r(e,n,r){var i=null;if(r!==void 0&&(i=``+r),n.key!==void 0&&(i=``+n.key),`key`in n)for(var a in r={},n)a!==`key`&&(r[a]=n[a]);else r=n;return n=r.ref,{$$typeof:t,type:e,key:i,ref:n===void 0?null:n,props:r}}e.Fragment=n,e.jsx=r,e.jsxs=r})),M=o(((e,t)=>{t.exports=wr()}))();function Tr(e){return new Date(e).toLocaleDateString(`en-GB`,{day:`2-digit`,month:`long`,year:`numeric`,hour:`2-digit`,minute:`2-digit`,hour12:!1}).replace(`,`,`,`)}function Er(e,t){let n=new Date(t)-new Date(e),r=Math.round(n/6e4),i=Math.floor(r/60),a=r%60;return i===0?`${a} minutes`:a===0?`${i} hour${i>1?`s`:``}`:`${i} hour${i>1?`s`:``} ${a} minutes`}function Dr({name:e,start:t,end:n,location:r,speaker:i,type:a,locationIcon:o,speakerIcon:s,dateIcon:c,timeIcon:l}){return(0,M.jsxs)(vr,{children:[(0,M.jsxs)(yr,{children:[(0,M.jsx)(br,{children:e}),(0,M.jsx)(xr,{$type:a,children:a})]}),(0,M.jsxs)(Sr,{children:[(0,M.jsxs)(Cr,{children:[o,(0,M.jsx)(`span`,{children:r})]}),(0,M.jsxs)(Cr,{children:[s,(0,M.jsx)(`span`,{children:i})]}),(0,M.jsxs)(Cr,{children:[c,(0,M.jsx)(`span`,{children:Tr(t)})]}),(0,M.jsxs)(Cr,{children:[l,(0,M.jsx)(`span`,{children:Er(t,n)})]})]})]})}Dr.propTypes={name:j.default.string.isRequired,start:j.default.string.isRequired,end:j.default.string.isRequired,location:j.default.string.isRequired,speaker:j.default.string.isRequired,type:j.default.oneOf([`free`,`paid`,`vip`]).isRequired,locationIcon:j.default.element.isRequired,speakerIcon:j.default.element.isRequired,dateIcon:j.default.element.isRequired,timeIcon:j.default.element.isRequired};var Or=Kn.div`
-  padding: 32px 40px;
+  // padding: 30px 35px;
 `,kr=Kn.h1`
   font-size: 2.6rem;
   font-weight: 900;
   color: #1a2a4a;
   margin-bottom: 32px;
   letter-spacing: 0.02em;
+  text-transform: uppercase;
 
 `,Ar=Kn.ul`
   display: grid;
